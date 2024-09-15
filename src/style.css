@@ -1,0 +1,38 @@
+body {
+  background: #b6cdbd;
+}
+.container {
+  max-width: 600px;
+  margin: 120px auto;
+}
+main {
+  display: flex;
+}
+.wrapper {
+  background: whitesmoke;
+  padding: 40px 60px;
+  border-radius: 20px;
+}
+.instructions {
+  width: 70%;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: monospace;
+}
+.submit-button {
+  background: #5c715e;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  font-family: monospace;
+  font-size: medium;
+}
+.submit-button:hover {
+  cursor: pointer;
+}
+a {
+  color: #2b4450;
+}
+footer {
+  margin-top: 10px;
+}
