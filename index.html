@@ -4,36 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Fitness Program Generator</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <div class="container">
-    <header>
-      <h1>AI Fitness Program Generator</h1>
-    </header>
-    <main>
-      <div class="wrapper">
-        <input type="text" placeholder="Enter a focus..." required class="instructions"/>
-        <input type="Submit" class="submit-button" />
+  <body>
+    <div class="container">
+      <header>
+        <h1>AI Fitness Program Generator</h1>
+      </header>
+      <main>
+        <div class="wrapper">
+        <form id="program-generator-form">
+          <input
+            type="text"
+            placeholder="Enter a focus..."
+            required
+            autofocus
+            autocomplete="off"
+            class="instructions"
+            id="user-instructions"
+          />
+          <input type="Submit" class="submit-button" />
+        </form>
+        <div class="hint">ie: bodyweight, pilates, core, lower body</div>
+        </div>
+        <div class="program hidden" id="program"></div>
+      </main>
 
-        <small>ie: bodyweight, pilates, core, lower body </small>
-       
-      </div>
-    </main>
-
-    <footer>
-      Coded with ❤ by
-      <a href="https://github.com/rjsaimon-gif" target="_blank"
-        >Regina Saimon
-      </a>
-      and is open-sourced on
-      <a
-        href="https://github.com/rjsaimon-gif/AI-fitness-program-generator"
-        target="_blank"
-        >Github</a
-      >
-      and hosted on
-      <a href="https://ai-fitness-program-generator.netlify.app/">Netlify</a>
-    </footer>
-  </div>
-  <body></body>
+      <footer>
+        Coded with ❤ by
+        <a href="https://github.com/rjsaimon-gif" target="_blank"
+          >Regina Saimon
+        </a>
+        and is open-sourced on
+        <a
+          href="https://github.com/rjsaimon-gif/AI-fitness-program-generator"
+          target="_blank"
+          >Github</a
+        >
+        and hosted on
+        <a href="https://ai-fitness-program-generator.netlify.app/">Netlify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>

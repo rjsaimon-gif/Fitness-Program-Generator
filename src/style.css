@@ -5,34 +5,79 @@ body {
   max-width: 600px;
   margin: 120px auto;
 }
-main {
+header {
+  margin-bottom: 30px;
+}
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form {
   display: flex;
 }
 .wrapper {
   background: whitesmoke;
-  padding: 40px 60px;
-  border-radius: 20px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  line-height: 20px;
 }
 .instructions {
-  width: 70%;
+  width: 80%;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 45px;
   font-family: monospace;
+  box-shadow: none;
 }
 .submit-button {
   background: #5c715e;
-  padding: 15px 20px;
-  border-radius: 10px;
+  padding: 10px 20px;
+  border-radius: 45px;
   border: none;
+  color: white;
   font-family: monospace;
   font-size: medium;
+  width: 140px;
 }
 .submit-button:hover {
   cursor: pointer;
+}
+.hint {
+  line-height: 1.5;
+  color: gray;
+  font-size: 15px;
 }
 a {
   color: #2b4450;
 }
 footer {
   margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+.program {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+.program-strong {
+    font-weight: 200;
+}
+.hidden {
+  display: none;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
