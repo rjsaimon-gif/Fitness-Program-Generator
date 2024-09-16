@@ -1,23 +1,40 @@
 body {
-  background: #b6cdbd;
+  background:  #b6cdbd;;
 }
 .container {
   max-width: 600px;
   margin: 120px auto;
 }
+.icon {
+    position: relative;
+    top: 57px;
+    left: 256px ;
+    
+}
 header {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 h1 {
   text-align: center;
   font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
 }
+h3 {
+  text-align: center;
+  font-family: monospace;
+  color:  #5c715e;
+  margin: 5px;
+  font-weight: 300;
+  font-size: small;
+  position: relative;
+  left: 25px;
+  bottom: 23px;
+}
 form {
   display: flex;
 }
 .wrapper {
-  background: whitesmoke;
+  background: white;
   padding: 15px 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -29,16 +46,18 @@ form {
   border-radius: 45px;
   font-family: monospace;
   box-shadow: none;
+  border: solid 1px black;
 }
 .submit-button {
   background: #5c715e;
-  padding: 10px 20px;
-  border-radius: 45px;
-  border: none;
+  padding: 10px 15px;
+  border-radius: 60px;
+  border: solid 1px;
   color: white;
   font-family: monospace;
   font-size: medium;
   width: 140px;
+  margin-left: 5px;
 }
 .submit-button:hover {
   cursor: pointer;
@@ -47,6 +66,7 @@ form {
   line-height: 1.5;
   color: gray;
   font-size: 15px;
+  margin-top: 10px;
 }
 a {
   color: #2b4450;
@@ -57,13 +77,13 @@ footer {
   font-size: 15px;
 }
 .program {
-  background-color: whitesmoke;
+  background-color: white;
   color: black;
   border-radius: 10px;
   padding: 15px 20px;
 }
 .program-strong {
-    font-weight: 200;
+  font-weight: 200;
 }
 .hidden {
   display: none;

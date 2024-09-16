@@ -7,27 +7,36 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>AI Fitness Program Generator</h1>
+          <h1>
+            <div class="icon">
+           <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e8eaed"><path d="m550-84-42-42 142-142-382-382-142 142-42-42 56-58-56-56 85-85-42-42 42-42 43 41 84-84 56 56 58-56 42 42-142 142 382 382 142-142 42 42-56 58 56 56-86 86 42 42-42 42-42-42-84 84-56-56-58 56Z"/></svg> </div>AI
+          Fitness Program Generator
+        </h1>
       </header>
+      <h3>Where AI Does the Thinking, and You Do the Sweating!</h3>
       <main>
         <div class="wrapper">
-        <form id="program-generator-form">
-          <input
-            type="text"
-            placeholder="Enter a focus..."
-            required
-            autofocus
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="Submit" class="submit-button" />
-        </form>
-        <div class="hint">ie: bodyweight, pilates, core, lower body</div>
+          <form id="program-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a focus..."
+              required
+              autofocus
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="Submit" class="submit-button" />
+          </form>
+          <div class="hint">ie: bodyweight, pilates, core, lower body</div>
         </div>
         <div class="program hidden" id="program"></div>
       </main>
